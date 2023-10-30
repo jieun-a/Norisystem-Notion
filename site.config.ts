@@ -60,12 +60,16 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
+      title: 'Blog',
+      pageId: 'Blog-81e05d80c5154e4d9c31dd0d01ce09f7?pvs=4'
+    },
+    {
       title: 'About',
-      pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+      pageId: 'About-c3313d430c134070b37758d66c9f603f?pvs=4'
     },
     {
       title: 'Contact',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+      pageId: 'Contact-4707deaee6614e9eb4ea66a26db4c6ea?pvs=4'
     },
     {
       title: 'Nori Home',
