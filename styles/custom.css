@@ -18,7 +18,7 @@ span.title{
     display: none!important;
 }
 
-.notion-page-icon-image{
+.notion-header .notion-page-icon-image{
     background-image: url(../public/page-icon.png); 
     /* 방법을 좀 더 찾아볼 것 */
     background-size: 100px 22px;
