@@ -11,6 +11,8 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
+import * as config from '@/lib/config'
+
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
@@ -77,6 +79,23 @@ export const NotionPageHeader: React.FC<{
               }
             })
             .filter(Boolean)}
+
+          <div>
+            <a
+              className={cs(styles.navLink, 'breadcrumb', 'button')}
+              href={`${config.homepage}`}
+              title={`Norisystem Homepage`}
+              target='_blank'
+              rel='norisystem Corp.'
+            >noriHome</a>
+            <a
+              className={cs(styles.navLink, 'breadcrumb', 'button')}
+              href={`${config.groupware}`}
+              title={`Norisystem Groupware`}
+              target='_blank'
+              rel='norisystem Corp. Groupware'
+            >Groupware</a>
+          </div>
 
           <ToggleThemeButton />
 

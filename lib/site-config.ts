@@ -21,6 +21,8 @@ export interface SiteConfig {
   youtube?: string
   zhihu?: string
   mastodon?: string;
+  homepage?: string
+  groupware?: string
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
@@ -43,7 +45,6 @@ export interface NavigationLink {
   title: string
   pageId?: string
   url?: string
-  homepage?: string
 }
 
 export const siteConfig = (config: SiteConfig): SiteConfig => {

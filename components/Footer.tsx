@@ -36,8 +36,8 @@ export const FooterImpl: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        <>{config.author}</><br/>
-        <>수원사업장 : {config.addressSuwon} · TEL : {config.suwonTel}</><br/>
+        <>{config.author}</><br />
+        <>수원사업장 : {config.addressSuwon} · TEL : {config.suwonTel}</><br />
         <>천안사업장 : {config.addressCheonan} · TEL : {config.cheonanTel}</>
       </div>
 
@@ -51,6 +51,20 @@ export const FooterImpl: React.FC = () => {
             title='Toggle dark mode'
           >
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+          </a>
+        )}
+      </div>
+
+      <div className={styles.social}>
+        {config.homepage && (
+          <a
+            className={styles.homepage}
+            href={`${config.homepage}`}
+            title={`Norisystem Homepage`}
+            target='_blank'
+            rel='norisystem Corp.'
+          >
+            <img src='../public/favicon-192x192.png'></img>
           </a>
         )}
       </div>

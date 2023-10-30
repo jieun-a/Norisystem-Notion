@@ -28,6 +28,8 @@ export default siteConfig({
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  homepage: 'http://norisystem.co.kr',
+  groupware: 'http://gw.norisystem.co.kr',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -70,10 +72,6 @@ export default siteConfig({
     {
       title: 'Contact',
       pageId: 'Contact-4707deaee6614e9eb4ea66a26db4c6ea?pvs=4'
-    },
-    {
-      title: 'Nori Home',
-      url: 'www.norisystem.co.kr'
     }
   ]
 })

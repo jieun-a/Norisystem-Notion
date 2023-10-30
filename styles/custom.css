@@ -10,6 +10,10 @@
     display: none;
 } */
 
+.notion-hash-link{
+    display: none;
+}
+
 span.title{
     display: none;
 }
