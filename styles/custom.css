@@ -1,0 +1,32 @@
+.notion-page-cover-wrapper, .notion-page-icon-hero {
+    display: none;
+}
+
+.index-page > h1.notion-title{
+    display: none;
+}
+
+/* .notion-nav-header > span.title{
+    display: none;
+} */
+
+span.title{
+    display: none;
+}
+
+.notion-page-icon-image > span > img{
+    display: none!important;
+}
+
+.notion-page-icon-image{
+    background-image: url(../public/page-icon.png); 
+    /* 방법을 좀 더 찾아볼 것 */
+    background-size: 100px 22px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 22px;
+}
+
+.notion-page-icon-inline{
+    max-width: 100px;
+}
