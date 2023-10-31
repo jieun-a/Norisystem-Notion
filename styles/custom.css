@@ -34,3 +34,6 @@ span.title{
 .notion-page-icon-inline{
     max-width: 100px;
 }
+.homepage:hover{
+    color: #2795e9;
+}

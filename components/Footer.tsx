@@ -15,6 +15,8 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
+import Icon from './Icon'
+
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
@@ -41,7 +43,24 @@ export const FooterImpl: React.FC = () => {
         <>천안사업장 : {config.addressCheonan} · TEL : {config.cheonanTel}</>
       </div>
 
+      <div className={styles.social}>
+
+      </div>
+
       <div className={styles.settings}>
+        {config.homepage && (
+          <a
+            className={styles.toggleDarkMode}
+            href={`${config.homepage}`}
+            title={`Norisystem Homepage`}
+            target='_blank'
+            rel='norisystem Corp.'
+          >
+            {isDarkMode ? <Icon size={32} color="rgba(255, 255, 255, 0.9)" /> : <Icon size={32} color="rgb(55, 53, 47)" />}
+            {/* 새로고침 시 DarkMode 쪽 Icon 안 먹이는 문제 발생. 해결 요망 */}
+          </a>
+        )}
+
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -55,19 +74,7 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
-      <div className={styles.social}>
-        {config.homepage && (
-          <a
-            className={styles.homepage}
-            href={`${config.homepage}`}
-            title={`Norisystem Homepage`}
-            target='_blank'
-            rel='norisystem Corp.'
-          >
-            <img src='../public/favicon-192x192.png'></img>
-          </a>
-        )}
-      </div>
+
 
       {/* <div className={styles.social}>
         {config.twitter && (
